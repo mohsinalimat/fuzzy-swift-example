@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		D6BC1EC822FCB1C500F674CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BC1EC622FCB1C500F674CF /* Main.storyboard */; };
 		D6BC1ECA22FCB1C600F674CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BC1EC922FCB1C600F674CF /* Assets.xcassets */; };
 		D6BC1ECD22FCB1C600F674CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BC1ECB22FCB1C600F674CF /* LaunchScreen.storyboard */; };
+		D6BC1ED622FCB49C00F674CF /* Fuzzy in Frameworks */ = {isa = PBXBuildFile; productRef = D6BC1ED522FCB49C00F674CF /* Fuzzy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BC1ED622FCB49C00F674CF /* Fuzzy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "fuzzy-swift-example";
+			packageProductDependencies = (
+				D6BC1ED522FCB49C00F674CF /* Fuzzy */,
+			);
 			productName = "fuzzy-swift-example";
 			productReference = D6BC1EBD22FCB1C500F674CF /* fuzzy-swift-example.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = D6BC1EB422FCB1C500F674CF;
+			packageReferences = (
+				D6BC1ED422FCB49C00F674CF /* XCRemoteSwiftPackageReference "fuzzy-swift" */,
+			);
 			productRefGroup = D6BC1EBE22FCB1C500F674CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6BC1ED422FCB49C00F674CF /* XCRemoteSwiftPackageReference "fuzzy-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/khoi/fuzzy-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6BC1ED522FCB49C00F674CF /* Fuzzy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6BC1ED422FCB49C00F674CF /* XCRemoteSwiftPackageReference "fuzzy-swift" */;
+			productName = Fuzzy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6BC1EB522FCB1C500F674CF /* Project object */;
 }

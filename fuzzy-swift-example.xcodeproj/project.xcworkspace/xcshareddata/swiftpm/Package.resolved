@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Fuzzy",
+        "repositoryURL": "https://github.com/khoi/fuzzy-swift",
+        "state": {
+          "branch": null,
+          "revision": "48d0ddb4c226e8a28a8f905fa0549ee6f90954fc",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
